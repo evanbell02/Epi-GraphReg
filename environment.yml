@@ -1,0 +1,19 @@
+name: EGR
+channels:
+  - conda-forge
+  - nvidia
+  - pytorch
+dependencies:
+  - python
+  - pytest
+  - pytorch
+  - pyg
+  - torchmetrics
+  - tensorboard
+  - matplotlib
+  - lightning
+  - pip
+  - torchvision
+  - jsonargparse
+  - pip:
+    - "jsonargparse[signatures]"
