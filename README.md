@@ -1,5 +1,7 @@
 # EpiGraphReg
 
+This repository contains the code for a final course project for CMSE 410 at Michigan State University. The goal of this project was to reproduce some of the methods and results of the paper ["Chromatin interaction–aware gene regulatory modeling with graph attention networks."](https://pubmed.ncbi.nlm.nih.gov/35396274/) For the authors' original code, see [their original repository](https://github.com/karbalayghareh/GraphReg/). This repository has code for training similar models on synthetic datasets. We implement a version of the baseline Epi-CNN model, as well as a version of the Epi-GraphReg model. We also include two synthetic datasets, with synthetic DNase-seq data, CAGE-seq data, and chromatin interaction graphs. In one dataset, all regulatory elements are enhancers, while in the other there are both enhancers and silencers. For more implementation details about both the models and the datasets see the included technical report `FinalReport.pdf`.
+
 ### Environment setup
 The conda environment needed to run all scripts in this repository can be created using `conda env create -f environment.yml`. The created environment is called `EGR`, unless another name is specified.
 
