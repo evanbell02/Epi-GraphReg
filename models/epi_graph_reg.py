@@ -51,7 +51,7 @@ class EpiGraphReg(pl.LightningModule):
 
     def training_step(self, batch, batch_idx):
 
-        epi, cage, g, e_a = batch
+        epi, cage, g = batch
 
         pred_cage = self(epi.squeeze(0), g.squeeze())
         
@@ -65,7 +65,7 @@ class EpiGraphReg(pl.LightningModule):
         
         with torch.no_grad():
             
-            epi, cage, g, e_a = batch
+            epi, cage, g = batch
 
             pred_cage = self(epi.squeeze(0), g.squeeze())
             
@@ -79,7 +79,7 @@ class EpiGraphReg(pl.LightningModule):
         
         with torch.no_grad():
             
-            epi, cage, g, e_a = batch
+            epi, cage, g = batch
 
             pred_cage = self(epi.squeeze(0), g.squeeze())
             

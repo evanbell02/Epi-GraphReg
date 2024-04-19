@@ -1,5 +1,6 @@
 import sys
-sys.path.append('/egr/research-slim/belleva1/EpiGraphReg')
+from pathlib import Path
+sys.path.append(str(Path().parent.resolve()))
 import lightning.pytorch as pl
 import torch
 import models

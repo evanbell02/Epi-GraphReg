@@ -1,7 +1,7 @@
 seed_everything: 123
 
 trainer:
-  max_epochs: 500
+  max_epochs: 1000
   deterministic: True
   check_val_every_n_epoch: 10
 

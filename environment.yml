@@ -3,6 +3,7 @@ channels:
   - conda-forge
   - nvidia
   - pytorch
+  - pyg
 dependencies:
   - python
   - pytest
@@ -14,6 +15,3 @@ dependencies:
   - lightning
   - pip
   - torchvision
-  - jsonargparse
-  - pip:
-    - "jsonargparse[signatures]"
